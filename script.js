@@ -47,9 +47,10 @@ function show(opacity){
         header1.style.backgroundColor='white';
         header1.style.boxShadow='1px 1px 10px rgba(139, 139, 139, 0.3)';
     }
-    else if(scroll<50){
+    else if(scroll<60){
         console.log(scroll)
         const header1=document.querySelector('header');
+        header1.style.backgroundColor='transparent';
         header1.style.boxShadow='none';
 
     }
