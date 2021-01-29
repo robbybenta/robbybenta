@@ -47,6 +47,10 @@ header ul li{
     list-style: none;
     
 }
+.nav-sroll{
+    box-shadow: 2px 2px 10px rgba(139, 139, 139, 0.9);
+    background-color: black;
+}
 header ul li a{
     display: inline-block;
     color: #333;

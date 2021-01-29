@@ -36,6 +36,26 @@ function show(opacity){
      console.log(stock1)
  }
 
+
+
+ window.addEventListener("scroll", (event) => {
+    let scroll = this.scrollY;
+    
+    if(scroll>50){
+        console.log(scroll)
+        const header1=document.querySelector('header');
+        header1.style.backgroundColor='white';
+        header1.style.boxShadow='1px 1px 10px rgba(139, 139, 139, 0.3)';
+    }
+    else if(scroll<50){
+        console.log(scroll)
+        const header1=document.querySelector('header');
+        header1.style.boxShadow='none';
+
+    }
+   
+});
+
 //  console.log(nav)
 
 // $(document).ready(function(){
