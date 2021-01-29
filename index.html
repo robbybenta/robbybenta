@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Nasi - Padang Everyday</title>
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href=""> <img class="logo" src="./image/logo-1.png" alt=""></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Nasi Padang <span>Everyday</span></h2>
+                <p>Nasi Padang yang menggunakan resep rahasia turun temurun. Coba kalian bayangkan nasi putih hangat
+                    dicampur dengan daging rendang yang kenyal, lalu dipadukan dengan es teh manis yang seger dan manis.
+                    Yoi... sadis pasti rasanya......</p>
+                <a href="#menu-section" onclick="show('1')">Lihat Menu</a>
+            </div>
+            <div class="imgBox">
+                <img src="./image/nasi2.png" class="nasipadang img-padang" alt="">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./image/nasi-icon.png"
+                    onclick="imgSlider('./image/nasi-icon.png');changeCircleColor('#02c39a')" alt=""></li>
+            <li><img src="./image/nasi-icon2.png"
+                    onclick="imgSlider('./image/nasi-icon2.png');changeCircleColor('#f4a261')" alt=""></li>
+        </ul>
+    </section>
+    <div class="menu-box" id="menu-section">
+        <h1>Menu Kami</h1>
+        <div class="box-card">
+            <div class="card" id='card-show1'>
+                <div class="card-image">
+                    <img src="./image/nasi2.png" alt="">
+                </div>
+                <div class="card-text">
+                    <h4 style="margin-bottom: 10px;color: #e76f51;"><b>Rp. 20,000</b></h4>
+                    <h3 class="font-card">Nasi Padang Rendang</h3>
+                    <p class="p-card">Nasi padang, menggunakan beras pilihan dan menggunakan olahan daging sapi yang
+                        segar
+                        dan fresh. Lalu disempurnakan oleh bumbu rempah tradisional</p>
+
+                </div>
+
+                <div class="card-stats">
+                    <div class="stat">
+                        <div class="value" id="stock1">10</div>
+                        <div class="type">Stocks</div>
+                    </div>
+                    <div class="stat">
+                        <div class="value" id="people1">300</div>
+                        <div class="type">People</div>
+                    </div>
+                    <div class="stat buy">
+                        <div class="value" onclick="beli('stock1','people1')">
+                            <h3>Beli</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card-show2">
+                <div class="card-image">
+                    <img src="./image/nasi.png" alt="">
+                </div>
+                <div class="card-text">
+                    <h4 style="margin-bottom: 10px;color: #e76f51;"><b>Rp. 21,000</b></h4>
+                    <h3 class="font-card">Nasi Padang Gulai Ayam</h3>
+                    <p class="p-card">Nasi padang, menggunakan beras pilihan dan menggunakan olahan daging sapi yang
+                        segar
+                        dan fresh. Lalu disempurnakan oleh bumbu rempah tradisional</p>
+                </div>
+                <div class="card-stats">
+                    <div class="stat">
+                        <div class="value" id="stock2">200</div>
+                        <div class="type">Stocks</div>
+                    </div>
+                    <div class="stat">
+                        <div class="value" id="people2">300</div>
+                        <div class="type">People</div>
+                    </div>
+                    <div class="stat buy">
+                        <div class="value" onclick="beli('stock2','people2')">
+                            <h3>Beli</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card-show3">
+                <div class="card-image">
+                    <img src="./image/nasi2.png" alt="">
+                </div>
+                <div class="card-text">
+                    <h4 style="margin-bottom: 10px;color: #e76f51;"><b>Rp. 20,000</b></h4>
+                    <h3 class="font-card">Nasi Padang Rendang</h3>
+                    <p class="p-card">Nasi padang, menggunakan beras pilihan dan menggunakan olahan daging sapi yang
+                        segar
+                        dan fresh. Lalu disempurnakan oleh bumbu rempah tradisional</p>
+                </div>
+                <div class="card-stats">
+                    <div class="stat">
+                        <div class="value" id="stock3">200</div>
+                        <div class="type">Stocks</div>
+                    </div>
+                    <div class="stat">
+                        <div class="value" id="people3">300</div>
+                        <div class="type">People</div>
+                    </div>
+                    <div class="stat buy">
+                        <div class="value" onclick="beli('stock3','people3')">
+                            <h3>Beli</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p> - Nasi Padang Menyebabkan Kebahagiaan berlanjut, <br> Es Teh Manis membuat emosi reda. Yoi mamen -</p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
